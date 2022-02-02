@@ -1,27 +1,31 @@
 # PorthTestFrontend
 
+This following program is the backend solution for the PORTH test.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+![main](docs/main.png)
 
-## Development server
+This project is hosted at "https://porth-test-front-end.vercel.app/"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run server
 
-## Code scaffolding
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+NOTE: The api that this app consumes is pointing to the backend hosted at https://porthtestbackend.herokuapp.com/api/messages
+if you want to use this app with the backend running locally, go to the file src/app/services/message.service and comment line 21 and enable line 20
+![apiurl](docs/apiurl.png)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Description
+Hacer una página para dejar mensajes, donde puedas entrar por medio de un explorador web, dejar un mensaje y que quede persistente, si vuelves a entrar a la página, todos los mensajes que se hayan enviado deben seguir ahí.
 
-## Running unit tests
+## Arquitecture
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The functional structure of the program was modeled using the c4 model components diagram
+![arquitecture](docs/arquitectureC4.png)
 
-## Running end-to-end tests
+## Approach and Methodology
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+For exercise development first I read the problem carefully until I found a possible solution, then I translated the solution in pseudo code to check if it would be useful, once my solution was verified I proceeded to design the component diagram and finally assemble the project structure and implement the solution.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I Manage all my tasks using a proyect within the github repository created for the exercise.
+![Tasks](docs/tasks.png)

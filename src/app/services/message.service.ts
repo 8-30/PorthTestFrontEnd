@@ -17,7 +17,8 @@ export class MessageService {
     
   ) { }
 
-  private messagesApiUrl = 'http://localhost:3000/api/messages';  
+  //private messagesApiUrl = 'http://localhost:3000/api/messages';  //localhost
+  private messagesApiUrl = 'https://porthtestbackend.herokuapp.com/api/messages'; //heroku
 
   getMessages(): Observable<Message[]> {
     return this.http.get<Message[]>(this.messagesApiUrl)
