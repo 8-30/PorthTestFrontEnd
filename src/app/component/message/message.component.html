@@ -1,0 +1,15 @@
+
+<div class="messagesContainer">
+    <div *ngFor="let item of messages ">
+        <p >{{item.sender}}:</p>
+        <p class="messageBox">{{item.text}}</p>
+    </div>
+</div>
+<div class="inputContainer">
+    <form (submit)="sendMessage()" [formGroup]="form">
+        Name: <input class="nameInput" formControlName="sender" type="text">
+        Message: <input class="textInput" formControlName="text" type="text">
+        <button>Send</button>
+    </form>
+
+</div>

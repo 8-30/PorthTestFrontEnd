@@ -1,0 +1,35 @@
+.messagesContainer{
+    padding: 30px;
+    width: 100%;
+    height: max-content;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:70px;
+    background-color: ghostwhite;
+}
+.messageBox{
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 80%;
+    color: white;
+    font-size: 17px;
+    align-self: center;
+
+    background-color:darkcyan;
+}
+.inputContainer{
+    background-color: ghostwhite;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:10px;
+
+
+}
+.textInput{
+    width: 60%;
+}
+.nameInput{
+    width: 20%;
+}
